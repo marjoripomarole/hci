@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-sm-4">
+    Mapa
+  </div>
+  <div class="col-sm-8 container">
+    <h5><strong>Aqui estão alguns projetos em São Paulo que precisam de pessoas que<br>sabem sobre Música e querem ajudar a causa de Crianças.</strong></h5>
+
+    <div class="projeto row" ng-repeat="p in projetos">
+      <img src="/images/{{p.image}}" class="col-sm-1"/>
+      <div class="col-sm-4">
+        <p style="color: {{p.color}}">{{p.title}}</p>
+        <p>{{p.description}}</p>
+      </div>
+      <div class="col-sm-4">
+        {{p.ong}}
+      </div>
+      <button class="btn btn-default"><span style="color: red" class="glyphicon glyphicon-ok"></span> Cadastro</button>
+    </div>
+    <a href="/" class="btn btn-primary col-sm-offset-9">Voltar</a>
+  </div>
+</div>
