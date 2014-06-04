@@ -1,10 +1,8 @@
 'use strict';
 
 angular.module('hciApp', [
-  'ngCookies',
-  'ngResource',
-  'ngSanitize',
-  'ngRoute'
+  'ngRoute',
+  'google-maps'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider

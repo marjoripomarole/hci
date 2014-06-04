@@ -3,6 +3,14 @@
 angular.module('hciApp')
   .controller('ExplorarCtrl', function ($scope) {
     
+    $scope.map = {
+      center: {
+        latitude: -23.6824124,
+        longitude: -46.5952992
+      },
+      zoom: 11
+    };
+
     $scope.projetos = [
       {
         title: 'Professor de Violão',
