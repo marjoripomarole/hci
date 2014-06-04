@@ -1,21 +1,80 @@
-<div ng-include="'partials/navbar'"></div>
+<div class="container">
+  <h3>Vamos te ajudar a encontrar trabalho voluntário!</h3>
+  <h5>Mas primeiro, precisamos te conhecer um pouco mais...</h5>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!</a></p>
+  <form class="form-horizontal" role="form">
+    <div class="row" style="margin: 50px 0;">
+      <label class="col-sm-2">Onde você mora?</label>
+      <div class="col-xs-3">
+        <input type="text" class="form-control" placeholder="Rua">
+      </div>
+      <div class="col-xs-2">
+        <input type="text" class="form-control" placeholder="#">
+      </div>
+      <div class="col-xs-3">
+        <input type="text" class="form-control" placeholder="Cidade">
+      </div>
+      <div class="col-xs-2">
+        <input type="text" class="form-control" placeholder="UF">
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 50px;">
+      <div class="col-sm-6">
+        <label class="col-sm-4">O que você faz bem?</label>
+        <select multiple class="col-md-8" style="height: 104px;">
+          <option>Desenvolvimento Web</option>
+          <option>Música</option>
+          <option>Arte / Artesanato</option>
+          <option>Educação</option>
+          <option>Comunicação</option>
+          <option>Outra</option>
+        </select>
+      </div>
+      <div class="col-sm-6">
+        <label class="col-sm-6" style="margin-bottom: 28px;">Periodo que você pode ajudar?</label>
+        <div class="btn-group btn-group-justified">
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">Manha</button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">Tarde</button>
+          </div>
+          <div class="btn-group">
+            <button type="button" class="btn btn-default">Noite</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 50px;">
+      <div class="col-sm-6">
+        <label class="col-sm-4">Qual causa que te inspira?</label>
+        <select multiple class="col-md-8" style="height: 104px;">
+          <option>Animal</option>
+          <option>Educação</option>
+          <option>Capacitação Profissional</option>
+          <option>Meio Ambiente</option>
+          <option>Saúde</option>
+          <option>Todas</option>
+        </select>
+      </div>
+      <div class="col-sm-6">
+        <label class="col-sm-6">e por quantas horas?</label>
+        <div class="col-sm-2">
+          <input type="number" class="form-control" name="quantity" min="1" max="10" placeholder="1">
+        </div>
+      </div>
+    </div>
+
+
+
+    <button type="submit" class="btn btn-primary btn-lg pull-right"><span class="glyphicon glyphicon-heart"></span> Começar Procura</button>
+  </form>
 </div>
 
-<div class="row marketing">
-  <div ng-repeat="thing in awesomeThings">
-      <h4>{{thing.name}}</h4>
-      <p>{{thing.info}}</p>
+<div id="footer">
+  <div class="container">
+    <p class="text-muted">♥ do Group 12 de HCI</p>
   </div>
-</div>
-
-<div class="footer">
-  <p>♥ from the Yeoman team</p>
 </div>

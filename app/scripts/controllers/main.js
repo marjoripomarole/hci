@@ -6,3 +6,4 @@ angular.module('hciApp')
       $scope.awesomeThings = awesomeThings;
     });
   });
+

@@ -12,6 +12,10 @@ angular.module('hciApp', [
         templateUrl: 'partials/main',
         controller: 'MainCtrl'
       })
+      .when('/explorar', {
+        templateUrl: 'partials/explorar',
+        controller: 'ExplorarCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
