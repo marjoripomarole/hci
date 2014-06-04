@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('hciApp')
-  .controller('ExplorarCtrl', function ($scope) {
+  .controller('ExplorarCtrl', function ($scope, $location, $rootScope) {
     
     $scope.map = {
       center: {
@@ -9,6 +9,11 @@ angular.module('hciApp')
         longitude: -46.5952992
       },
       zoom: 11
+    };
+
+    $scope.selectProject = function (project) {
+      $rootScope.selected = project;
+      $location.path('/projeto');
     };
 
     $scope.projetos = [
