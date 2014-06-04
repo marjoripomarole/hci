@@ -18,6 +18,11 @@ angular.module('hciApp', [
         templateUrl: 'partials/projeto',
         controller: 'ProjetoCtrl'
       })
+      .when('/chat', {
+        templateUrl: 'partials/chat',
+        controller: 'ChatCtrl'
+      })
+
 
       .otherwise({
         redirectTo: '/'
