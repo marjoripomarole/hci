@@ -1,5 +1,4 @@
 node_modules
-public
 .*.swp
 .*.swo
 .tmp
@@ -7,4 +6,3 @@ public
 app/bower_components
 heroku
 /views
-dist
